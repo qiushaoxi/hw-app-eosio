@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+      "target": "es5",
+      "module": "commonjs",
+      "declaration": true,
+      "strict": true,
+      "outDir": "./lib",
+      "esModuleInterop": true
+  },
+  "include": ["src", "temp/scatter-example.js", "src-js/index.ts", "src-js/EosLedger.js"],
+  "exclude": ["node_modules", "**/__tests__/*"]
+}

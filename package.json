@@ -1,0 +1,36 @@
+{
+  "name": "@qiushaoxi/hw-app-eosio",
+  "version": "1.0.6",
+  "description": "Ledger Javascript API for EOSIO.",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "start": "tsc -w",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qiushaoxi/hw-app-eosio.git"
+  },
+  "keywords": [
+    "Ledger",
+    "Javascript",
+    "EOSIO"
+  ],
+  "author": "qiushaoxi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/qiushaoxi/hw-app-eosio/issues"
+  },
+  "homepage": "https://github.com/qiushaoxi/hw-app-eosio#readme",
+  "dependencies": {
+    "@ledgerhq/hw-transport-node-hid": "^4.68.0",
+    "@types/ledgerhq__hw-transport-node-hid": "^4.22.1",
+    "@types/long": "^4.0.0",
+    "@types/node": "^12.6.8",
+    "asn1-ber": "^1.0.9",
+    "bip32-path": "^0.4.2",
+    "eosjs": "16.0.9",
+    "eosjs-ecc": "^4.0.4"
+  }
+}

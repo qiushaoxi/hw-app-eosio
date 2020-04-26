@@ -24,13 +24,18 @@
   },
   "homepage": "https://github.com/qiushaoxi/hw-app-eosio#readme",
   "dependencies": {
-    "@ledgerhq/hw-transport-node-hid": "^4.68.0",
-    "@types/ledgerhq__hw-transport-node-hid": "^4.22.1",
     "@types/long": "^4.0.0",
     "@types/node": "^12.6.8",
     "asn1-ber": "^1.0.9",
     "bip32-path": "^0.4.2",
-    "eosjs": "16.0.9",
     "eosjs-ecc": "^4.0.4"
+  },
+  "devDependencies": {
+    "@ledgerhq/hw-transport-node-hid": "^4.68.0",
+    "@types/ledgerhq__hw-transport-node-hid": "^4.22.1",
+    "fibos.js": "^0.3.11",
+    "eosjs-classic-yas": "^16.0.11",
+    "babel-polyfill": "^6.26.0",
+    "eosjs": "16.0.9"
   }
 }

@@ -1,7 +1,5 @@
-import { convertPathToBuffer, serialize, foreachBuffer} from './utils';
-import TransportNodeHid from "@ledgerhq/hw-transport-node-hid";
+import { convertPathToBuffer, serialize, foreachBuffer } from './utils';
 const bippath = require('bip32-path')
-const Eos = require('eosjs')
 const ecc = require('eosjs-ecc')
 
 const LEDGER_CODES = {
@@ -24,10 +22,10 @@ const TX_PARSE_ERR = 0x6d07;
 
 
 export default class HwAppEosio {
-  transport: TransportNodeHid
-  constructor(transport: TransportNodeHid, scrambleKey = '"e0s"') {
+  transport: any
+  constructor(transport: any, scrambleKey = '"e0s"') {
     this.transport = transport;
-    //transport.decorateAppAPIMethods(this, ['getPublicKey', 'signMessage'], scrambleKey);
+    // transport.decorateAppAPIMethods(this, ['getPublicKey', 'signMessage'], scrambleKey);
   }
 
   async getPublicKey(path: string, keyPrefix = "EOS") {
@@ -50,7 +48,7 @@ export default class HwAppEosio {
     }
   }
 
-  async signTransaction(path: string, transaction: any, eosjsConfig: any) {
+  async signTransaction(path: string, transaction: any, eosjsConfig: any, Eos = require('eosjs')) {
 
     const paths = bippath.fromString(path).toPathArray();
     let offset = 0;
